@@ -1,20 +1,44 @@
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Big memes</title>
-  <meta property="og:site_name" content="Test">
-  <meta property="og:title" content="Big memes">
-  <meta property="og:type" content="video.other">
-  <meta property="og:image" content="https://customer-ldcl3cff16n8d346.cloudflarestream.com/107856f6ac6021c5907098ebcd02b564/thumbnails/thumbnail.jpg">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="1280">
-  <meta property="og:image:height" content="720">
-  <meta property="og:url" content="https://zpuckeridge.github.io/oembed-testing/">
-  <meta property="og:video" content="https://customer-ldcl3cff16n8d346.cloudflarestream.com/107856f6ac6021c5907098ebcd02b564/watch">
-  <meta property="og:video:url" content="https://customer-ldcl3cff16n8d346.cloudflarestream.com/107856f6ac6021c5907098ebcd02b564/watch">
-  <meta property="og:video:type" content="video/mp4">
-  <meta property="og:video:width" content="1280">
-  <meta property="og:video:height" content="720">
+<html>
+	
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Big memes</title>
+    <meta property="og:site_name" content="Test">
+    <meta property="og:title" content="Big memes">
+    <meta property="og:type" content="video.other">
+    <meta property="og:image" content="https://customer-ldcl3cff16n8d346.cloudflarestream.com/107856f6ac6021c5907098ebcd02b564/thumbnails/thumbnail.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta property="og:url" content="https://zpuckeridge.github.io/oembed-testing/">
+    <meta property="og:video" content="https://customer-ldcl3cff16n8d346.cloudflarestream.com/107856f6ac6021c5907098ebcd02b564/watch">
+    <meta property="og:video:url" content="https://customer-ldcl3cff16n8d346.cloudflarestream.com/107856f6ac6021c5907098ebcd02b564/watch">
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="720">
   
-  <meta name="robots" content="noindex">
-</head>
+    <meta name="robots" content="noindex">
+    
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.10.2/video-js.min.css"
+			rel="stylesheet"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.10.2/video.min.js"></script>
+	</head>
+  
+	<body>
+		<video-js id="vid1" controls preload="auto">
+			<source
+				src="https://customer-ldcl3cff16n8d346.cloudflarestream.com/107856f6ac6021c5907098ebcd02b564/manifest/video.m3u8"
+				type="application/x-mpegURL"
+			/>
+		</video-js>
+
+		<script>
+			const vid = document.getElementById('vid1');
+			const player = videojs(vid);
+		</script>
+	</body>
+  
+</html>
